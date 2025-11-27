@@ -1,0 +1,67 @@
+name: test_cluster
+description: Современное образовательное приложение для тестирования
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Design
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.3.2
+  flutter_svg: ^2.2.3
+  lottie: ^3.3.2
+  animate_do: ^4.2.0
+  shimmer: ^3.0.0
+  
+  # State Management
+  provider: ^6.1.5+1
+  get: ^4.7.2
+  
+  # Storage
+  shared_preferences: ^2.5.3
+  sqflite: ^2.4.2
+  path_provider: ^2.1.5
+  
+  # Utils
+  intl: ^0.20.2
+  equatable: ^2.0.7
+  image_picker: ^1.2.1
+  syncfusion_flutter_pdfviewer: ^31.2.12
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Добавим ассеты позже
+  assets:
+  #   # PDF книги для 9 класса
+  #   - assets/books/grade9/1semester/
+  #   - assets/books/grade9/2semester/
+  #   - assets/books/grade9/3semester/
+  #   - assets/books/grade9/4semester/
+  #   - assets/books/grade9/5semester/
+    
+  #   # PDF книги для 11 класса
+  #   - assets/books/grade11/1semester/
+  #   - assets/books/grade11/2semester/
+    - assets/books/grade11/3semester/tarix_11_3.pdf
+    - assets/books/grade11/3semester/
+    - assets/books/tajik/
+    - assets/books/russian/
+    - assets/books/russian/zaboni_tojiki_11_ru.pdf
+    - assets/books/russian/zaboni_tojiki_11_key_ru.pdf
+    - assets/books/tajik/zaboni_tojiki_11_key.pdf
+    - assets/books/tajik/zaboni_tojiki_11.pdf
+  #   - assets/books/grade11/4semester/
+  #   - assets/books/grade11/5semester/
